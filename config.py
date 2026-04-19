@@ -6,13 +6,13 @@ load_dotenv()
 
 # --- MANDATORY SETTINGS ---
 # We use .get() with a default value so the bot won't crash if the var is missing
-BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "8598064539:AAFFDzeNlqPAOdhTvGIizQ9eL2Wp9Tf9jqQ")
+BOT_TOKEN: str = os.environ.get("BOT_TOKEN", "")
 
 # API_ID must be an integer. We convert the string from environment to int.
-API_ID: int = int(os.environ.get("API_ID", "27322718"))
+API_ID: int = int(os.environ.get("API_ID", ""))
 
 # API_HASH must be a string.
-API_HASH: str = os.environ.get("API_HASH", "4f6d1b67cf101aea5cf0536885aa1b82")
+API_HASH: str = os.environ.get("API_HASH", "")
 
 # --- OPTIONAL / SESSION SETTINGS ---
 NDUS_COOKIE: str | None = os.environ.get("NDUS_COOKIE")
